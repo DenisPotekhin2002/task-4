@@ -11,7 +11,7 @@ html { box-sizing: border-box }
 .icon {
   width: 70px;
   height: 70px;
-  margin: .5em;
+  margin: 8px;
 }
 
 .sprite {
@@ -282,6 +282,11 @@ input {
   height: var(--pic_height);
 }
 
+.sprite {
+  background: url("my_sprite.svg") 0 0 no-repeat;
+  width: 446px;
+}
+
 #not_squared:checked ~ .sprite .squared,
 #squared:checked ~ .sprite .not_squared {
   visibility: visible;
@@ -373,6 +378,8 @@ input {
 
 #logo:checked ~ .sprite .norm .icon {
   background-color: chartreuse;
+  opacity: 0.3;
+  border-radius: 18px;
 }
 
 .slider {
